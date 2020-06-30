@@ -1,0 +1,73 @@
+.app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "ac plus-minus percent divide"
+    "number-7 number-8 number-9 multiply"
+    "number-4 number-5 number-6 subtract"
+    "number-1 number-2 number-3 add"
+    "number-0 number-0 dot equal";
+    grid-template-columns: repeat(4, 80rrpx);
+    grid-template-rows: repeat(6, 80rrpx);
+    box-shadow: -8rrpx -8rpx 16rpx -10rpx rgba(255, 255, 255, 1),
+      8rpx 8rpx 16rpx -10rpx rgba(0, 0, 0, 0.15);
+    padding: 24rpx;
+    border-radius: 20rpx;
+}
+
+.calculator .button {
+  width: 160rpx;
+  height: 160rpx;
+  line-height: 160rpx;
+  user-select: none;
+  margin: 8rpx;
+  padding: 0;
+  border: 0;
+  display: block;
+  outline: none;
+  border-radius: 80rpx;
+  font-size: 80rpx;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #999;
+  background: linear-gradient(
+    135deg,
+    rgba(230, 230, 230, 1) 0%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  box-shadow: -4rpx -4rrpx 10rpx -8rpx rgba(255, 255, 255, 1),
+    4rpx 4rpx 10rpx -8rpx rgba(0, 0, 0, 0.3);
+}
+
+.calculator .button:active {
+  box-shadow: -4rpx -4rpx 10rpx -8rpx rgba(255, 255, 255, 1) inset,
+    4rpx 4rpx 10rpx -8rpx rgba(0, 0, 0, 0.3) inset;
+}
+
+.result {
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-align: right;
+  line-height:160rpx;
+  font-size: 48rpx;
+  font-family: Helvetica;
+  padding: 0 20rpx;
+  color: #666;
+}
+
+.result .display {
+  position: relative;
+  float: right;
+  font-size: 80rpx;
+}
