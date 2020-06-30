@@ -40,6 +40,7 @@ Page({
   isOperator: function (character) {
     return ["+", "-", "×", "÷"].indexOf(character) > -1;
   },
+  
   append: function (e) {
     var character = e.currentTarget.id
     // Start
@@ -119,8 +120,6 @@ Page({
       isOperatorAdded: false,
       isEntering: false
     })
-
-
   },
 
   // When pressed '+/-'
@@ -129,7 +128,7 @@ Page({
       return;
     }
     this.setData({
-      equation: this.data.equation + "* -1"
+      equation: this.data.equation + "* (-1)"
     })
     this.calculate();
   },
