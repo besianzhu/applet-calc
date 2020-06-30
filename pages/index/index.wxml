@@ -4,7 +4,7 @@
     			<view class="display">{{ equation }}</view>
     		</view>
 
-    		<button class="button" style="grid-area: ac" bindtap="clear" idc="{{idc}}">AC</button>
+    		<button class="button" style="grid-area: ac" bindtap="clear" id="{{idc}}">AC</button>
     		<button class="button" style="grid-area: plus-minus" bindtap="calculateToggle" id="{{idt}}">±</button>
     		<button class="button" style="grid-area: percent" bindtap="calculatePercentage" id="{{idper}}">%</button>
     		<button class="button" style="grid-area: add" bindtap="append" id="{{idadd}}">+</button>
@@ -13,16 +13,17 @@
     		<button class="button" style="grid-area: divide" bindtap="append" id="{{iddiv}}">÷</button>
     		<button class="button" style="grid-area: equal" bindtap="calculate" id="{{ideq}}">=</button>
 
-    		<button class="button" style="grid-area: number-1" bindtap="append" id="{{1}}">1</button>
-    		<button class="button" style="grid-area: number-2" bindtap="append" id="{{2}}">2</button>
-    		<button class="button" style="grid-area: number-3" bindtap="append" id="{{3}}">3</button>
-    		<button class="button" style="grid-area: number-4" bindtap="append" id="{{4}}">4</button>
-    		<button class="button" style="grid-area: number-5" bindtap="append" id="{{5}}">5</button>
-    		<button class="button" style="grid-area: number-6" bindtap="append" id="{{6}}">6</button>
-    		<button class="button" style="grid-area: number-7" bindtap="append" id="{{7}}">7</button>
-    		<button class="button" style="grid-area: number-8" bindtap="append" id="{{8}}">8</button>
-    		<button class="button" style="grid-area: number-9" bindtap="append" id="{{9}}">9</button>
-    		<button class="button" style="grid-area: number-0" bindtap="append" id="{{0}}">0</button>
+    		<button class="button" style="grid-area: number-1" bindtap="append" id="{{id1}}">1</button>
+    		<button class="button" style="grid-area: number-2" bindtap="append" id="{{id2}}">2</button>
+    		<button class="button" style="grid-area: number-3" bindtap="append" id="{{id3}}">3</button>
+    		<button class="button" style="grid-area: number-4" bindtap="append" id="{{id4}}">4</button>
+    		<button class="button" style="grid-area: number-5" bindtap="append" id="{{id5}}">5</button>
+    		<button class="button" style="grid-area: number-6" bindtap="append" id="{{id6}}">6</button>
+    		<button class="button" style="grid-area: number-7" bindtap="append" id="{{id7}}">7</button>
+    		<button class="button" style="grid-area: number-8" bindtap="append" id="{{id8}}">8</button>
+    		<button class="button" style="grid-area: number-9" bindtap="append" id="{{id9}}">9</button>
+    		<button class="button" style="grid-area: number-0" bindtap="append" id="{{id0}}">0</button>
+    		<button class="button" style="grid-area: number-00" bindtap="append" id="{{id00}}">00</button>
 
     		<button class="button" style="grid-area: dot" bindtap="append" id="{{iddot}}">.</button>
     	</view>
