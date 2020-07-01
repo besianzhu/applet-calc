@@ -34,9 +34,6 @@ Page({
     isEntering: false
   },
 
-  /**
-   * 自定义函数
-   */
   isOperator: function (character) {
     return ["+", "-", "×", "÷"].indexOf(character) > -1;
   },
@@ -64,7 +61,7 @@ Page({
       return;
     }
 
-    // If Number
+    // 数字
     if (!this.isOperator(character)) {
       if (character === "." && this.data.isDecimalAdded) {
         return;
@@ -95,7 +92,7 @@ Page({
 
     }
 
-    // Added Operator
+    // 加减
     if (this.isOperator(character) && !this.data.isOperatorAdded) {
       this.setData({
         equation: this.data.equation += "" + character,
@@ -122,7 +119,7 @@ Page({
     })
   },
 
-  // When pressed '+/-'
+  // 正负
   calculateToggle() {
     if (this.data.isOperatorAdded || !this.data.isStarted) {
       return;
@@ -133,7 +130,7 @@ Page({
     this.calculate();
   },
 
-  // When pressed '%'
+  // 百分比
   calculatePercentage() {
     if (this.data.isOperatorAdded || !this.data.isStarted) {
       return;
@@ -144,7 +141,7 @@ Page({
     this.calculate();
   },
 
-  // When pressed 'AC'
+  // 清零
   clear() {
     this.setData({
       equation: "0",

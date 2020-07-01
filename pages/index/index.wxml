@@ -24,7 +24,7 @@
     		<button class="button" style="grid-area: number-9" bindtap="append" id="{{id9}}">9</button>
     		<button class="button" style="grid-area: number-0" bindtap="append" id="{{id0}}">0</button>
     		<button class="button" style="grid-area: number-00" bindtap="append" id="{{id00}}">00</button>
-
     		<button class="button" style="grid-area: dot" bindtap="append" id="{{iddot}}">.</button>
+			
     	</view>
     </view>
