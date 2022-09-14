@@ -12,11 +12,11 @@
   display: grid;
   grid-template-areas:
     "result result result result"
-    "ac plus-minus percent divide"
+    "ac back percent divide"
     "number-7 number-8 number-9 multiply"
     "number-4 number-5 number-6 subtract"
     "number-1 number-2 number-3 add"
-    "number-0 number-00 dot equal";
+    "number-0 plus-minus dot equal";
     grid-template-columns: repeat(4, 80rrpx);
     grid-template-rows: repeat(6, 80rrpx);
     box-shadow: -8rrpx -8rpx 16rpx -10rpx rgba(255, 255, 255, 1),

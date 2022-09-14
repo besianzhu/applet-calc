@@ -4,8 +4,8 @@
     			<view class="display">{{ equation }}</view>
     		</view>
 
-    		<button class="button" style="grid-area: ac" bindtap="clear" id="{{idc}}">AC</button>
-    		<button class="button" style="grid-area: plus-minus" bindtap="calculateToggle" id="{{idt}}">±</button>
+    		<button class="button" style="grid-area: ac" bindtap="clear" id="{{idac}}">AC</button>
+    		<button class="button" style="grid-area: back" bindtap="back" id="{{idback}}">C</button>
     		<button class="button" style="grid-area: percent" bindtap="calculatePercentage" id="{{idper}}">%</button>
     		<button class="button" style="grid-area: add" bindtap="append" id="{{idadd}}">+</button>
     		<button class="button" style="grid-area: subtract" bindtap="append" id="{{idsub}}">-</button>
@@ -22,8 +22,8 @@
     		<button class="button" style="grid-area: number-7" bindtap="append" id="{{id7}}">7</button>
     		<button class="button" style="grid-area: number-8" bindtap="append" id="{{id8}}">8</button>
     		<button class="button" style="grid-area: number-9" bindtap="append" id="{{id9}}">9</button>
+    		<button class="button" style="grid-area: plus-minus" bindtap="calculateToggle" id="{{idt}}">±</button>
     		<button class="button" style="grid-area: number-0" bindtap="append" id="{{id0}}">0</button>
-    		<button class="button" style="grid-area: number-00" bindtap="append" id="{{id00}}">00</button>
     		<button class="button" style="grid-area: dot" bindtap="append" id="{{iddot}}">.</button>
 			
     	</view>

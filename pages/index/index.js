@@ -15,9 +15,9 @@ Page({
     id2: "2",
     id1: "1",
     id0: "0",
-    id00: "00",
 
-    idc: "ac",
+    idac: "ac",
+    idback: "c",
     idt: "±",
     idper: "%",
     iddot: ".",
@@ -149,6 +149,17 @@ Page({
       isOperatorAdded: false,
       isStarted: false,
       isEntering: false
+    })
+  },
+
+  // 后退
+  back() {
+    if (this.data.equation.length <= 1) {
+      this.clear()
+      return
+    }
+    this.setData({
+      equation: this.data.equation.substr(0, this.data.equation.length - 1)
     })
   },
 
